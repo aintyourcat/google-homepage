@@ -9,7 +9,7 @@ html { box-sizing: border-box; }
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -18,14 +18,17 @@ a {
     color: inherit;
 }
 
-input { font-size: inherit; }
+input { 
+    font-size: inherit; 
+    font-family: inherit;
+}
 
 ul {
     display: flex;
     align-items: center;
 }
 
-ul:nth-child(2) {
+ul:last-child {
     flex: 1;
     justify-content: flex-end;
 }
@@ -35,8 +38,6 @@ ul > li { list-style: none; }
 ul > li > a { display: block; }
 
 ul > li > a:hover { text-decoration: underline; }
-
-ul > li:last-child { margin-right: 0; }
 
 nav {
     display: flex;
@@ -48,6 +49,8 @@ nav {
 nav > ul:first-child > li { margin-right: 20px; }
 
 nav > ul:last-child > li { margin-right: 15px; }
+
+nav > ul > li:last-child { margin-right: 0; }
 
 #google-apps {
     background-image: url('https://web.archive.org/web/20191201000239im_/https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
@@ -157,3 +160,5 @@ footer {
 footer > ul > li {
     margin-right: 25px;
 }
+
+footer > ul > li:last-child { margin-right: 0; }
